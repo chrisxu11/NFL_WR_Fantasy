@@ -8,7 +8,7 @@ import numpy as np
 seasons = list(range(2024, 2025))
 seasonal_data = nfl.import_seasonal_data(seasons, s_type='REG')
 
-# Get roster data to filter for RBs
+# Get roster data to filter for WRs
 rosters = nfl.import_seasonal_rosters(seasons)
 
 # Merge with roster data to get positions
@@ -203,4 +203,5 @@ for bar in bars:
 
 plt.tight_layout()
 plt.savefig('top_50_ppr_wrs.png', dpi=300, bbox_inches='tight')
+
 plt.show()
